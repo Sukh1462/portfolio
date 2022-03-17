@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="final.css" type="text/css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=WindSong:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <div class="content">
+
+
+            <div class="me">
+                
+                <img id="me" src="me.jpeg " alt="My picture">
+                
+                <h1 id="my-name" >SUKHMANPREET KAUR MALHI</h1> 
+                <p id="desc">Front-end developer</p>
+                <button id="resumebutton" type="button">Resume</button>
+
+                <button id="contactMe" type="button"><a href="#contact-form">Contact me</a></button>
+            </div>
+
+            <hr class="hr1">
+            <hr class="hr2">
+
+            <div class="flex">
+                
+                <div class="about">
+                    <h3 id="about">About me</h3>
+                <p id="about-text">Hello, world! I am Sukhmanpreet Kaur Malhi from India. I graduated from my highschool last year and currently, I am a student of <b>Computer Programming and Analysis</b> Advanced-diploma program at the <b>Seneca College of Applied Arts and Technology</b>. The primary area of my interest is front-end. I like designing and creating products that matter!   </p>
+
+                </div>
+                <div class="basic-info">
+                    <h3 id="basic">Basic information</h3>
+                    <div class="grid">
+                        <div id="age">
+                            <p>AGE:</p>
+                            <p class="value" id="abc">19</p>
+                        </div>
+
+                        <div id="email">
+                            <p>EMAIL:</p>
+                            <p class="value">skmalhi2@myseneca.ca</p>
+                        </div>
+
+                        <div id="lang">
+                            <p>LANGUAGE:</p>
+                            <p class="value">English, Punjabi, Hindi</p>
+                        </div>
+
+                    </div>
+            
+                </div>
+            </div>
+
+            <br>
+
+            <hr class="hr1">
+            <hr class="hr2">
+
+            <div class="education">
+                <h1 id="ed">EDUCATION</h1>
+                <div class="web222">
+                    <div class="main">
+                        <p>(2018 - 2020)</p>
+                        
+                        <p><b>Senior Secondary Education</b></p>
+                    </div>
+                    <div class="info">
+                        <h2>Senior Secondary Education</h2>
+                        <h5>RYAN INTERNATIONAL SCHOOL</h5>
+
+                        
+                        <p class="small">Under the supervision of Principal Mr. Kalra</p>
+                        <p class="small">Awarded with no scholarship</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="web222">
+                    <div class="main">
+                        <p>(May 2021 - August 2021)</p>
+                        
+                        <p><b>Web Programming Principles</b></p>
+                    </div>
+                    <div class="info">
+                        <h2>Web Programming Principles</h2>
+                        <h5>SENECA COLLEGE</h5>
+                        
+                        <p class="small">Under the supervision of Dr. Sharmin Ahmed</p>
+                        <p class="small">Awarded with no scholarship</p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <hr class="hr1">
+            <hr class="hr2">
+
+            <br>
+            <br>
+
+            <div class="contact-me-form">
+                <form id="contact-form" method="POST" action="https://httpbin.org/post" onsubmit="return validate();">
+
+                    <fieldset>
+
+                        <legend>Contact me:</legend> <br>
+ 
+
+
+                    <label for="name">NAME:</label><br>
+                    <input type="text" name="name" id="name" required placeholder="NAME">
+                    <br>
+                    <br>
+                    <label for="mail">EMAIL:</label><br>
+                    <input type="email" name="mail" id="mail" required placeholder="EMAIL">
+                    <br>
+                    <br>
+                    <label for="address">ADDRESS:</label><br>
+                    <input type="text" name="address" id="address" required placeholder="ADDRESS">
+                    <br>
+                    <br>
+                    <label for="cities">CITY:</label><br>
+                    <input type="text" list="cities" name="cities" placeholder="CITY" required>
+                    <datalist id="cities">
+                        <option value="Toronto">
+                        <option value="Vancouver">
+                        <option value="Ottawa">
+                        <option value="Mississauga">
+                        <option value="Brampton">
+                           
+                    </datalist>
+                    <br>
+                    <br>
+
+                    <label for="code">POSTAL CODE:</label><br>
+                    <input type="text" name="code" id="code" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required placeholder="POSTAL CODE">
+                    <br>
+                    <br><br>
+                    <label for="radio">REASON FOR CONTACTING:</label><br> <BR>
+
+
+
+                    <div id="radio">
+                        <input type="radio" name="reason" id="question" value="question" onclick="javascript:yesnoCheck();" checked/>Question
+                        <input type="radio" name="reason" id="comment" value="comment" onclick="javascript:yesnoCheck();"/>Comment
+                        <input type="radio" name="reason" id="hiring" value="hiring" onclick="javascript:yesnoCheck();"/>Hiring
+
+                    </div>
+                    <br>
+                    <br>
+                    <label for="hourly-rate" style="display: none" id="rate-label">HOURLY RATE in CAD</label>
+                    <input type="number" name="hourly-rate" id="hourly-rate" value="hourly-rate" style="display: none"  placeholder="HOURLY RATE (in $)" >
+
+
+                    <script>
+                      function yesnoCheck() {
+                            if (document.getElementById('hiring').checked) {
+                                     document.getElementById('hourly-rate').style.display = 'inline';
+                                     document.getElementById('rate-label').style.display='block';
+
+                            }
+                            else{ 
+                            document.getElementById('hourly-rate').style.display = 'none';
+                            document.getElementById('rate-label').style.display='none';
+                        }
+
+                        }
+
+                    </script>
+                    <div id="errors"></div>
+                   
+
+   
+                    <script>
+                            function validate()
+                            {
+                               var radio=document.getElementById("hiring");
+
+                               if (hiring.checked){
+                                let field=document.getElementById("hourly-rate");
+                                let input=field.value;
+                               
+                                    if(input>50)
+                                    {
+                                        document.getElementById("errors").innerHTML=" ";
+                                        document.getElementById('errors').style.display='none';
+                                  
+                                        return true;                   
+                                   
+                                    }
+                                    else if (input<=50)
+                                    {
+
+                                        document.getElementById("errors").innerHTML="The hourly rate should be more than $50";
+                                        document.getElementById('errors').style.display='block';
+
+                                        return false
+                     
+                                    }
+
+                                }
+
+                                return true;                               
+                                
+                            }
+                        </script>
+
+                    <br>
+
+                    <label for="msg">MESSAGE:</label> <br>
+                    <textarea id="msg" required placeholder="(Please enter here the message that you want to send)"></textarea>
+                    <br><br>
+
+       
+
+
+
+                    <input type="submit" name="submit" value="Submit info" id="sbutton">
+
+                </fieldset>
+
+                 
+
+
+  
+                
+                
+                
+                </form>
+                <br><br>
+            </div>
+
+            
+
+
+            
+            
+
+            
+
+         
+
+
+        </div>
+
+    </body>
+</html>
